@@ -29,6 +29,10 @@ al máximo las capacidades de TypeScript.
   - [Tipado de parametros y retorno de funciones](#tipado-de-parametros-y-retorno-de-funciones)
   - [Declaracion y llamada de funciones](#declaracion-y-llamada-de-funciones)
 
+- [Interfaces](#interfaces)
+  - [Definicion de interfaces para estructurar objetos](#definicion-de-interfaces-para-estructurar-objetos)
+  - [Uso de interfaces en funciones](#uso-de-interfaces-en-funciones)
+
 
  ## Introduccion a TypeScript
 
@@ -285,5 +289,93 @@ function saludar(nombre: string): string {
 ```ts
 let mensaje: string = saludar("Grace Murray Hopper");
 console.log(mensaje);
-
 ```
+
+## Interfaces
+
+### Definicion de interfaces para estructurar objetos
+
+En TypeScript, las interfaces son una herramienta clave
+para definir la estructura de objetos y asegurar la coherencia
+en la forma de los datos. Aquí tienes un ejemplo de cómo se
+define una interfaz para estructurar objetos:
+
+```ts
+// Definición de una interfaz para estructurar objetos
+interface Persona {
+    nombre: string;
+    edad: number;
+    email?: string; // Propiedad opcional
+}
+
+// Uso de la interfaz para crear objetos que sigan su estructura
+let usuaria: Persona = {
+    nombre: "Hedy Lamarr",
+    edad: 32,
+    email: "hedy@example.com"
+};
+```
+
+En este ejemplo:
+
+- La interfaz **Persona** define la estructura de un objeto que debe
+tener propiedades como **nombre** y **edad**, y opcionalmente puede
+tener la propiedad **email**.
+- Se utiliza la interfaz **Persona** para definir la forma
+del objeto **usuaria**.
+
+El uso de interfaces facilita la creación de código más legible,
+mantenible y seguro al definir claramente la estructura de los
+objetos en TypeScript.
+
+### Uso de interfaces en funciones
+
+En TypeScript, el uso de interfaces en funciones proporciona
+una forma efectiva de especificar el tipo de los parámetros y
+el tipo de retorno que la función debe aceptar y devolver.
+Observa el siguiente ejemplo:
+
+```ts
+// Definición de una interfaz para estructurar objetos
+interface Punto {
+    x: number;
+    y: number;
+}
+
+// Definición de una interfaz para la función
+interface CalculadoraDistancia {
+    calcularDistancia(p1: Punto, p2: Punto): number;
+}
+
+// Implementación de la interfaz en una función
+const calculadora: CalculadoraDistancia = {
+    calcularDistancia(p1: Punto, p2: Punto): number {
+        const distanciaX = p2.x - p1.x;
+        const distanciaY = p2.y - p1.y;
+        return Math.sqrt(distanciaX ** 2 + distanciaY ** 2);
+    }
+};
+
+// Uso de la función
+const puntoA: Punto = { x: 1, y: 2 };
+const puntoB: Punto = { x: 4, y: 6 };
+
+const distancia: number = calculadora.calcularDistancia(puntoA, puntoB);
+console.log(`La distancia entre los puntos es: ${distancia}`);
+```
+
+En este ejemplo:
+
+- Se define una interfaz **Punto** para estructurar objetos que
+representan coordenadas x e y.
+- Se define la interfaz **CalculadoraDistancia** que especifica
+una función llamada **calcularDistancia** que toma dos puntos
+(**Punto**) como parámetros y devuelve un número.
+- Se implementa la interfaz en un objeto **calculadora**,
+que tiene una función **calcularDistancia**.
+- Se utilizan objetos que cumplen con la interfaz **Punto** para representar puntos.
+- Se llama a la función **calcularDistancia** utilizando el objeto **calculadora** para obtener la distancia entre dos puntos.
+
+Este enfoque facilita el mantenimiento del código al proporcionar
+una estructura clara y permitir la verificación de tipos en
+funciones específicas.
