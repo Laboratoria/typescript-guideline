@@ -32,6 +32,8 @@ al máximo las capacidades de TypeScript.
 - [Interfaces](#interfaces)
   - [Definicion de interfaces para estructurar objetos](#definicion-de-interfaces-para-estructurar-objetos)
   - [Uso de interfaces en funciones](#uso-de-interfaces-en-funciones)
+ 
+- [Buenas practicas](#buenas-practicas)
 
 
  ## Introduccion a TypeScript
@@ -379,3 +381,61 @@ que tiene una función **calcularDistancia**.
 Este enfoque facilita el mantenimiento del código al proporcionar
 una estructura clara y permitir la verificación de tipos en
 funciones específicas.
+
+## Buenas practicas
+
+1. Tipado explícito: Proporciona tipos explícitos para
+variables, parámetros de funciones y el retorno de
+funciones para mejorar la claridad y la detección de errores.
+
+```ts
+// Buena práctica
+function sumar(a: number, b: number): number {
+  return a + b;
+}
+```
+
+1. Evitar el uso de `any`: Evita el uso de any en favor de
+tipos más específicos. Esto ayuda a aprovechar al máximo el
+sistema de tipado estático de TypeScript.
+
+```ts
+// Evitar
+let variable: any = "ejemplo";
+
+// Buena práctica
+let variable: string = "ejemplo";
+```
+
+1. Interfaces para estructurar datos: Utiliza interfaces
+para estructurar objetos y definir contratos claros.
+Facilita el mantenimiento y la comprensión del código.
+
+```ts
+// Buena práctica
+interface Usuario {
+  nombre: string;
+  edad: number;
+}
+```
+
+1. Desestructuración y parámetros con objetos: Utiliza
+desestructuración y parámetros con objetos para mejorar
+la legibilidad y evitar problemas en el orden de los argumentos.
+
+```ts
+// Buena práctica
+function imprimirInfo({ nombre, edad }: Usuario): void {
+  console.log(`Nombre: ${nombre}, Edad: ${edad}`);
+}
+```
+
+1. Modularización y organización de código: Organiza tu
+código en módulos y sigue prácticas de organización para
+facilitar el mantenimiento y la colaboración en proyectos
+más grandes.
+
+Estas son solo algunas prácticas recomendadas, pero ten en
+cuenta que las buenas prácticas pueden variar según el
+contexto y los requisitos específicos del proyecto.
+
