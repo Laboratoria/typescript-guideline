@@ -24,6 +24,11 @@ al máximo las capacidades de TypeScript.
 - [Variables y tipos de datos](#variables-y-tipos-de-datos)
   - [Declaración de variables con let y const](#declaración-de-variables-con-let-y-const)
   - [Tipos basicos: **number**, **string**, **boolean**, **array**](#tipos-basicos-number-string-boolean-array)
+ 
+- [Funciones](#funciones)
+  - [Tipado de parametros y retorno de funciones](#tipado-de-parametros-y-retorno-de-funciones)
+  - [Declaracion y llamada de funciones](#declaracion-y-llamada-de-funciones)
+
 
  ## Introduccion a TypeScript
 
@@ -214,3 +219,71 @@ Estos tipos básicos proporcionan un mecanismo
 sólido para definir y trabajar con diferentes
 tipos de datos en TypeScript, contribuyendo a
 la robustez y claridad del código.
+
+## Funciones
+
+### Tipado de parametros y retorno de funciones
+
+En TypeScript, el tipado de parámetros y el tipo
+de retorno de las funciones se realiza para mejorar
+la claridad y la seguridad del código. Aquí te presento
+un ejemplo de cómo se aplica el tipado en parámetros y
+retorno de funciones:
+
+```ts
+// Declaración de una función con tipado en parámetros y tipo de retorno
+function sumar(a: number, b: number): number {
+    return a + b;
+}
+
+// Llamada a la función con argumentos del tipo correcto
+let resultado: number = sumar(3, 5);
+
+console.log(resultado);  // Salida: 8
+```
+
+En este ejemplo:
+
+- La función **sumar** espera dos parámetros, ambos del tipo **number**.
+- El tipo de retorno de la función también está definido como **number**.
+
+Cuando se llama a la función **sumar**, se deben
+proporcionar argumentos del tipo correcto, y la
+variable **resultado** se declara con el tipo de
+retorno esperado. El tipado estático opcional
+en TypeScript permite detectar errores durante
+la fase de desarrollo y proporciona información
+útil sobre los tipos de datos que la función
+espera y devuelve.
+
+> [!TIP]
+> Si tienes dudas sobre **funciones**, **parametros** o **agumentos**
+>revisa [esta informacion](https://curriculum.laboratoria.la/es/topics/javascript/functions/classic)
+
+### Declaracion y llamada de funciones
+
+En TypeScript, la declaración y llamada de funciones
+sigue un formato similar al de JavaScript, pero con
+la adición de tipado estático opcional. Aquí unos
+ejemplos de  cómo realizar la declaración y llamada de funciones en TypeScript:
+
+- Declaración de función
+
+  - Puedes especificar el tipo de los parámetros y el tipo de retorno.
+
+```ts
+function saludar(nombre: string): string {
+    return `Hola, ${nombre}!`;
+}
+```
+
+- Llamada de función
+
+  - Al llamar la función, proporciona argumentos
+  del tipo esperado y maneja el valor de retorno.
+
+```ts
+let mensaje: string = saludar("Grace Murray Hopper");
+console.log(mensaje);
+
+```
