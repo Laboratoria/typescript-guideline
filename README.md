@@ -83,12 +83,3 @@ tipos de datos, como enumeraciones y tipos condicionales.
 6. Desarrollo más Seguro: Proporciona un desarrollo
 más seguro con tipado estático y características que mejoran
 la calidad del código.
-
-5. Compilación a JavaScript: Requiere compilación a JavaScript mediante el compilador de TypeScript (tsc) antes de la ejecución.
-
-6. Adición de tipos de datos: Introduce nuevos
-tipos de datos, como enumeraciones y tipos condicionales.
-
-7. Desarrollo más Seguro: Proporciona un desarrollo
-más seguro con tipado estático y características que mejoran
-la calidad del código.
