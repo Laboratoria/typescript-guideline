@@ -16,6 +16,10 @@ al máximo las capacidades de TypeScript.
 
 - [Instalacion de TypeScript](#instalacion-de-typescript)
   - [Como instalar TypeScript globalmente usando npm](#como-instalar-typescript-globalmente-usando-npm)
+ 
+- [Configuración del Proyecto](#configuracion-del-proyecto)
+  - [Archivo de configuracion **tsconfig.json**](#archivo-de-configuracion-tsconfigjson)
+  - [Configuracion de opciones esenciales](#configuracion-de-opciones-esenciales)
 
  ## Introduccion a TypeScript
 
@@ -122,4 +126,11 @@ tsc -w Hello.ts
 
 Como resultado se debió haber creado un nuevo archivo llamado **Hello.js** y el código que contiene es muy similar (pero
 no igual) al archivo  **Hello.ts** la diferencia es que el archivo **Hello.js** lo puedes usar para ser ejecutado.
+
+## Configuracion del proyecto
+<!-- En contruccion 🚧👷‍♀️ -->
+
+### Archivo de configuracion **tsconfig.json**
+
+### Configuracion de opciones esenciales
 
