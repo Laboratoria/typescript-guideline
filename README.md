@@ -14,6 +14,9 @@ al máximo las capacidades de TypeScript.
   - [Tipado de datos](#tipado-de-datos)
   - [Diferencias clave con JavaScript](#diferencias-clave-con-javascript)
 
+- [Instalacion de TypeScript](#instalacion-de-typescript)
+  - [Como instalar TypeScript globalmente usando npm](#como-instalar-typescript-globalmente-usando-npm)
+
  ## Introduccion a TypeScript
 
 ### Definicion y proposito de TypeScript
@@ -83,3 +86,40 @@ tipos de datos, como enumeraciones y tipos condicionales.
 6. Desarrollo más Seguro: Proporciona un desarrollo
 más seguro con tipado estático y características que mejoran
 la calidad del código.
+
+## Instalacion de TypeScript
+
+### Como instalar TypeScript globalmente usando npm
+
+Para este ejemplo, primero, instala TypeScript
+globalmente en tu computadora (recuerda que TypeScript
+no se ejecuta, se transpila) ejecutando la siguiente
+línea de código:
+
+```bash
+npm install -g typescript
+```
+
+Luego, crea un nuevo archivo llamado **Hello.ts**,
+ábrelo en tu editor de código y escribe el
+siguiente código TypeScript:
+
+```ts
+function greet(person: string, date: Date) {
+  console.log(`Hi ${person}, today is ${date.toDateString()}!`);
+}
+
+greet("Maddison", new Date());
+
+```
+
+Posteriormente, en la misma ubicación donde guardaste
+**Hello.ts**, ejecuta el siguiente comando:
+
+```bash
+tsc -w Hello.ts
+```
+
+Como resultado se debió haber creado un nuevo archivo llamado **Hello.js** y el código que contiene es muy similar (pero
+no igual) al archivo  **Hello.ts** la diferencia es que el archivo **Hello.js** lo puedes usar para ser ejecutado.
+
