@@ -21,6 +21,10 @@ al máximo las capacidades de TypeScript.
   - [Archivo de configuracion **tsconfig.json**](#archivo-de-configuracion-tsconfigjson)
   - [Configuracion de opciones esenciales](#configuracion-de-opciones-esenciales)
 
+- [Variables y tipos de datos](#variables-y-tipos-de-datos)
+  - [Declaración de variables con let y const](#declaración-de-variables-con-let-y-const)
+  - [Tipos basicos: **number**, **string**, **boolean**, **array**](#tipos-basicos-number-string-boolean-array)
+
  ## Introduccion a TypeScript
 
 ### Definicion y proposito de TypeScript
@@ -134,3 +138,79 @@ no igual) al archivo  **Hello.ts** la diferencia es que el archivo **Hello.js** 
 
 ### Configuracion de opciones esenciales
 
+## Variables y tipos de datos
+
+### Declaración de variables con **let** y **const**
+
+En TypeScript, la declaración de variables se
+realiza mediante las palabras clave **let** y
+**const**, las cuales comparten similitudes
+con JavaScript pero con la adición de tipado
+estático opcional.
+
+- Declaración con `let`:
+
+  - Se utiliza para declarar variables que pueden ser reasignadas.
+
+```ts
+let nombre: string = "Ejemplo";
+```
+
+- Declaración con `const`:
+
+  - Se utiliza para declarar variables con un valor constante que no puede ser reasignado.
+
+```ts
+const edad: number = 25;
+```
+
+Estas declaraciones permiten especificar el
+tipo de dato que contendrá la variable, mejorando
+la claridad y previniendo posibles errores
+durante el desarrollo.
+
+### Tipos basicos: **number**, **string**, **boolean**, **array**
+
+En TypeScript, se utilizan tipos básicos
+para definir variables con distintos tipos
+de datos. Aquí tienes ejemplos de cómo se
+utilizan los tipos básicos:
+
+- **number**
+
+  - Representa valores numéricos, ya sean enteros o decimales.
+
+```ts
+let edad: number = 32;
+```
+
+- **string**
+
+  - Representa valores de texto.
+
+```ts
+let nombre: string = "Ada Lovelace";
+```
+
+- **boolean**
+
+  - Representa valores lógicos, es decir, **true** o **false**.
+
+```ts
+let activo: boolean = false;
+```
+
+- **array**
+
+  - Representa un arreglo de elementos del mismo tipo.
+  Puedes especificar el tipo de elementos dentro del arreglo.
+
+```ts
+let numeros: number[] = [1, 2, 3, 4, 5];
+let palabras: string[] = ["uno", "dos", "tres"];
+```
+
+Estos tipos básicos proporcionan un mecanismo
+sólido para definir y trabajar con diferentes
+tipos de datos en TypeScript, contribuyendo a
+la robustez y claridad del código.
