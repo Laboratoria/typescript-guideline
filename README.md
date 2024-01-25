@@ -85,24 +85,25 @@ se centran principalmente en el sistema de tipado y
 algunas características adicionales que TypeScript introduce.
 A continuación, se destacan estas diferencias:
 
-1. Tipado estático opcional: TypeScript ofrece tipado
+1. **_Tipado estático opcional_**: Tipado
 estático opcional para detectar errores en etapas
 tempranas durante el desarrollo.
 
-2. Compatibilidad con JavaScript:TypeScript es un
-superconjunto de JavaScript, permitiendo la integración
+2. **_Compatibilidad con JavaScript_**:TypeScript es un
+superset de JavaScript, permitiendo la integración
 gradual en proyectos existentes.
 
-3. Uso de Clases e Interfaces: Permite la declaración de
+3. **_Uso de clases e interfaces_**: Permite la declaración de
 clases e interfaces para una programación más orientada
 a objetos.
 
-4. Compilación a JavaScript: Requiere compilación a JavaScript mediante el compilador de TypeScript (tsc) antes de la ejecución.
+4. **_Compilación a JavaScript_**: Requiere compilación a JavaScript
+mediante el compilador de TypeScript (tsc) antes de la ejecución.
 
-5. Adición de tipos de datos: Introduce nuevos
+6. **_Adición de tipos de datos_**: Introduce nuevos
 tipos de datos, como enumeraciones y tipos condicionales.
 
-6. Desarrollo más Seguro: Proporciona un desarrollo
+7. **_Desarrollo más seguro_**: Proporciona un desarrollo
 más seguro con tipado estático y características que mejoran
 la calidad del código.
 
