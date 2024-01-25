@@ -35,6 +35,7 @@ al máximo las capacidades de TypeScript.
  
 - [Buenas practicas](#buenas-practicas)
 
+- [Siguientes pasos](#siguientes-pasos)
 
  ## Introduccion a TypeScript
 
@@ -452,3 +453,13 @@ Estas son solo algunas prácticas recomendadas, pero ten en
 cuenta que las buenas prácticas pueden variar según el
 contexto y los requisitos específicos del proyecto.
 
+## Siguientes pasos 
+
+Visita los siguientes enlaces:
+
+- [Manual de la documentación oficial](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [Generar el archivo tsconfig.json](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+- [Angular trabaja nativamente con TS](https://angular.io/guide/typescript-configuration)
+- [Node con typescript](https://nodejs.org/en/learn/getting-started/nodejs-with-typescript)
+- [React con TS](https://es.react.dev/learn/typescript)
+- [Learn TypeScript](https://www.tutorialsteacher.com/typescript)
