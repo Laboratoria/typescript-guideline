@@ -37,6 +37,8 @@ al máximo las capacidades de TypeScript.
 
 - [Siguientes pasos](#siguientes-pasos)
 
+- [Conclusion](#conclusion)
+
  ## Introduccion a TypeScript
 
 ### Definicion y proposito de TypeScript
@@ -463,3 +465,12 @@ Visita los siguientes enlaces:
 - [Node con typescript](https://nodejs.org/en/learn/getting-started/nodejs-with-typescript)
 - [React con TS](https://es.react.dev/learn/typescript)
 - [Learn TypeScript](https://www.tutorialsteacher.com/typescript)
+
+## Conclusion
+
+TypeScript ha evolucionado mucho, hoy en dia es muy popular y su capacidad para añadir tipos estáticos a JavaScript no
+solo brinda una capa adicional de seguridad y detección de errores, sino que también impulsa la productividad y la
+escalabilidad de los proyectos. Al aprender TypeScript, te sumerges en un ecosistema que fomenta la creación de código
+más limpio, legible y mantenible, si tienes alguna duda no olvides: usar ExplainDev, usar los canales de los proyecto,
+preguntarle a tus coaches, asistir a git-camp y test-camp, esperamos que esta Introducción a TypeScript te sea de utilidad.
+
