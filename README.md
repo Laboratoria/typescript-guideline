@@ -151,19 +151,6 @@ no igual) al archivo  **Hello.ts** la diferencia es que el archivo **Hello.js** 
 
 ## Variables y tipos de datos
 
-> [!IMPORTANT]
-> Documentación sobre [tipos de datos](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
-
-| Type | Predicate |
-|---|---|
-|string| typeof s === "string"|
-| number | typeof n === "number" |
-| boolean | typeof b === "boolean" |
-| undefined | typeof undefined === "undefined" |
-| function | typeof f === "function" |
-| array | Array.isArray(a) |
-
-
 ### Declaración de variables con **let** y **const**
 
 En TypeScript, la declaración de variables se
@@ -238,6 +225,18 @@ Estos tipos básicos proporcionan un mecanismo
 sólido para definir y trabajar con diferentes
 tipos de datos en TypeScript, contribuyendo a
 la robustez y claridad del código.
+
+> [!IMPORTANT]
+> Documentación sobre [tipos de datos](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+
+| Type | Predicate |
+|---|---|
+|string| typeof s === "string"|
+| number | typeof n === "number" |
+| boolean | typeof b === "boolean" |
+| undefined | typeof undefined === "undefined" |
+| function | typeof f === "function" |
+| array | Array.isArray(a) |
 
 ## Funciones
 
