@@ -56,8 +56,8 @@ confiabilidad en el desarrollo de software.
 > [!NOTE]
 > En matemáticas, un superset es un conjunto que
 > contiene todos los elementos de otro conjunto.
-> En el caso de TypeScript, es un superset de
-> JavaScript. Esto significa que todo lo que puedes
+> En el caso de **_TypeScript, es un superset de
+> JavaScript_**. Esto significa que todo lo que puedes
 > hacer en JavaScript, también puedes hacerlo en
 > TypeScript.
 
