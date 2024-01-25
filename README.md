@@ -397,7 +397,7 @@ funciones específicas.
 
 ## Buenas practicas
 
-1. Tipado explícito: Proporciona tipos explícitos para
+1. **_Tipado explícito_**: Proporciona tipos explícitos para
 variables, parámetros de funciones y el retorno de
 funciones para mejorar la claridad y la detección de errores.
 
@@ -408,7 +408,7 @@ function sumar(a: number, b: number): number {
 }
 ```
 
-1. Evitar el uso de `any`: Evita el uso de any en favor de
+2. **_Evitar el uso de `any`_**: Evita el uso de any en favor de
 tipos más específicos. Esto ayuda a aprovechar al máximo el
 sistema de tipado estático de TypeScript.
 
@@ -420,7 +420,7 @@ let variable: any = "ejemplo";
 let variable: string = "ejemplo";
 ```
 
-1. Interfaces para estructurar datos: Utiliza interfaces
+3. **_Interfaces para estructurar datos_**: Utiliza interfaces
 para estructurar objetos y definir contratos claros.
 Facilita el mantenimiento y la comprensión del código.
 
@@ -432,7 +432,7 @@ interface Usuario {
 }
 ```
 
-1. Desestructuración y parámetros con objetos: Utiliza
+4. **_Desestructuración y parámetros con objetos_**: Utiliza
 desestructuración y parámetros con objetos para mejorar
 la legibilidad y evitar problemas en el orden de los argumentos.
 
@@ -443,7 +443,7 @@ function imprimirInfo({ nombre, edad }: Usuario): void {
 }
 ```
 
-1. Modularización y organización de código: Organiza tu
+5. **_Modularización y organización de código_**: Organiza tu
 código en módulos y sigue prácticas de organización para
 facilitar el mantenimiento y la colaboración en proyectos
 más grandes.
