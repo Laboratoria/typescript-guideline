@@ -33,6 +33,8 @@ Descubre el poder de TypeScript en el desarrollo web.
 - [Interfaces](#interfaces)
   - [Definicion de interfaces para estructurar objetos](#definicion-de-interfaces-para-estructurar-objetos)
   - [Uso de interfaces en funciones](#uso-de-interfaces-en-funciones)
+
+- [Tipos](#tipos)
  
 - [Buenas practicas](#buenas-practicas)
 
@@ -402,6 +404,82 @@ que tiene una función **calcularDistancia**.
 Este enfoque facilita el mantenimiento del código al proporcionar
 una estructura clara y permitir la verificación de tipos en
 funciones específicas.
+
+## Tipos
+
+En TypeScript, **type** crea alias de tipos,
+ofreciendo nombres más descriptivos para
+combinaciones o tipos complejos. Conocidos
+como **"Type Aliases"** o simplemente **"Types"**,
+facilitan la legibilidad y claridad del
+código, siendo esenciales para definir nuevos
+tipos de datos personalizados.
+
+La forma básica de definir un tipo con **type** es la siguiente:
+
+```ts
+type MiTipo = {
+    propiedad1: string;
+    propiedad2: number;
+};
+```
+
+En este ejemplo, **MiTipo** es un alias para
+un objeto con dos propiedades: una llamada
+**propiedad1** que debe ser de tipo **string** y
+otra llamada **propiedad2** que debe ser de tipo
+**number**. Luego, puedes usar **MiTipo** para
+declarar variables, parámetros de funciones
+o cualquier otro lugar donde necesites ese
+tipo de estructura.
+
+Además de crear alias para objetos, type también
+se puede utilizar para definir otros tipos de datos,
+como uniones, intersecciones y tipos condicionales.
+Aquí hay algunos ejemplos:
+
+- **Unión de tipos**
+
+```ts
+type Resultado = string | number;
+
+const variable: Resultado = "Hola";
+```
+
+En este caso, **Resultado** puede ser **string** o **number**.
+
+- **Intersección de tipos**
+
+```ts
+type A = { a: number };
+type B = { b: string };
+
+type AB = A & B;
+
+const objeto: AB = { a: 1, b: "texto" };
+```
+
+**AB** es un tipo que tiene todas las propiedades de **A** y **B**.
+
+- **Tipo condicional**
+
+```ts
+type EsNumerico<T> = T extends number ? "Sí" : "No";
+
+const resultado1: EsNumerico<number> = "Sí";
+const resultado2: EsNumerico<string> = "No";
+```
+
+En este caso, **EsNumerico** es un tipo condicional que
+evalúa si el tipo pasado como parámetro **(T)** es
+**number** o no.
+
+> [!IMPORTANT]
+> El uso de **type** brinda flexibilidad y claridad
+> al definir tipos en TypeScript, permitiendo crear
+> abstracciones y estructuras más complejas que se
+> pueden reutilizar en todo el código.
+
 
 ## Buenas practicas
 
