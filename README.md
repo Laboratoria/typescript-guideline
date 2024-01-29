@@ -1,10 +1,11 @@
 # TypeScript
 
-Descubre el poder de TypeScript en el desarrollo web.
+Es un lenguaje de programación que potencia el desarrollo de software.
 Este superset de JavaScript mejora proyectos,
 elevando la calidad del código. En esta introducción,
 proporcionaremos una base sólida para aprovechar
 al máximo las capacidades de TypeScript.
+Descubre el poder de TypeScript en el desarrollo web.
 ¡Bienvenida al mundo de TypeScript!
 
 ## Contenido
