@@ -111,6 +111,10 @@ tipos de datos, como enumeraciones y tipos condicionales.
 más seguro con tipado estático y características que mejoran
 la calidad del código.
 
+8. **Extensión de Archivos**: Una diferencia importante es la extensión de los archivos.
+   - **JavaScript**: Los archivos JavaScript típicamente tienen la extensión .js.
+   - **TypeScript**: Los archivos TypeScript utilizan la extensión .ts.
+
 ## Instalacion de TypeScript
 
 ### Como instalar TypeScript globalmente usando npm
