@@ -35,6 +35,8 @@ Descubre el poder de TypeScript en el desarrollo web.
   - [Uso de interfaces en funciones](#uso-de-interfaces-en-funciones)
 
 - [Tipos](#tipos)
+
+- [Diferencia entre tipos e interfaces](#diferencia-entre-tipos-e-interfaces)
  
 - [Buenas practicas](#buenas-practicas)
 
@@ -480,6 +482,108 @@ evalúa si el tipo pasado como parámetro **(T)** es
 > abstracciones y estructuras más complejas que se
 > pueden reutilizar en todo el código.
 
+## Diferencia entre tipos e interfaces
+
+Tanto los tipos `type` como las interfaces `interface`
+se utilizan para definir estructuras de datos en el código. Aunque comparten similitudes, hay algunas diferencias clave entre ambas.
+
+- **Extensibilidad**
+  - **Interfaces**: Las interfaces en TypeScript son abiertas
+  y pueden ser extendidas posteriormente. Puedes declarar
+  una interfaz con un nombre específico y luego extenderla
+  para agregar más propiedades o ajustar las existentes.
+
+  ```ts
+  interface Persona {
+      nombre: string;
+      edad: number;
+  }
+
+  interface Empleado extends Persona {
+      rol: string;
+  }
+  ```
+
+  - **Tipos**: Los tipos (type) también permiten crear
+  estructuras de datos, pero no son extensibles
+  directamente. No puedes declarar un tipo y luego
+  agregar más propiedades en una declaración separada.
+
+  ```ts
+  type Persona = {
+    nombre: string;
+    edad: number;
+  };
+
+  // Error: 'rol' no existe en el tipo 'Persona'
+  type Empleado = Persona & { rol: string };
+  ```
+
+- **Compatibilidad con uniones e intersecciones**
+  - **Interfaces**: Son útiles para crear uniones
+  y extensiones de interfaces mediante el uso de **extends**
+
+  ```ts
+  interface A {
+    a: number;
+  }
+
+  interface B {
+    b: string;
+  }
+
+  type Union = A | B; // Puede ser A o B
+  type Interseccion = A & B; // Debe ser tanto A como B
+  ```
+
+  - **Tipos**: También pueden realizar uniones
+  y extensiones de tipos, pero la sintaxis es
+  ligeramente diferente.
+
+  ```ts
+  type A = {
+    a: number;
+  };
+
+  type B = {
+    b: string;
+  };
+
+  type Union = A | B;
+  type Interseccion = A & B;
+  ```
+
+- **Herencia**
+  - **Interfaces**: Pueden ser extendidas mediante
+  **extends** para crear nuevas interfaces que heredan
+  propiedades de otras.
+
+  ```ts
+  interface Animal {
+    nombre: string;
+  }
+
+  interface Mamifero extends Animal {
+    tipo: string;
+  }
+  ```
+
+  - **Tipos**: Pueden ser utilizados para crear uniones y extensiones, pero no se declaran con **extends**.
+
+  ```ts
+  type Animal = {
+    nombre: string;
+  };
+
+  type Mamifero = Animal & {
+    tipo: string;
+  };
+  ```
+
+En resumen tanto **interfaces** como **tipos** en TypeScript son
+herramientas poderosas. Aunque a menudo son intercambiables,
+las diferencias en la extensibilidad y características
+específicas pueden influir en la elección entre ambos según el caso de uso.
 
 ## Buenas practicas
 
