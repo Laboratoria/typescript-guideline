@@ -115,10 +115,10 @@ tipos de datos, como enumeraciones y tipos condicionales.
 más seguro con tipado estático y características que mejoran
 la calidad del código.
 
-8. **Extensión de Archivos**: Una diferencia importante es la extensión de los archivos.
+8. **_Extensión de Archivos_**: Una diferencia importante es la extensión de los archivos.
    - **JavaScript**: Los archivos JavaScript típicamente tienen la extensión .js.
    - **TypeScript**: Los archivos TypeScript utilizan la extensión .ts.
-9. **Detección temprana de errores**: Una diferencia importante que puedes detectar errores en tiempo de desarrollo (es decir cuando estas programando), permitiendo codificar más rápido.
+9. **_Detección temprana de errores_**: Una diferencia importante que puedes detectar errores en tiempo de desarrollo (es decir cuando estas programando), permitiendo codificar más rápido.
     - **JavaScript**: Detectas los errores cuando ejecutas la aplicación.
     -  **TypeScript**: Detectas cuando estas programando.
 ## Instalacion de TypeScript
