@@ -654,7 +654,7 @@ Visita los siguientes enlaces:
 - [Node con typescript](https://nodejs.org/en/learn/getting-started/nodejs-with-typescript)
 - [React con TS](https://es.react.dev/learn/typescript)
 - [Learn TypeScript](https://www.tutorialsteacher.com/typescript)
-
+- [Getting Started a vite project (you can use typescript)](https://vitejs.dev/guide/)
 ## Conclusion
 
 TypeScript ha evolucionado mucho, hoy en dia es muy popular y su capacidad para añadir tipos estáticos a JavaScript no
