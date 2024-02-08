@@ -10,22 +10,18 @@ Descubre el poder de TypeScript en el desarrollo web.
 
 ## Contenido
 
-- [Introduccion a TypeScript](#introduccion-a-typescript)
-  - [Definicion y proposito de TypeScript](#definicion-y-proposito-de-typescript)
-  - [Tipado de datos](#tipado-de-datos)
+- [Definicion y proposito de TypeScript](#definicion-y-proposito-de-typescript)
   - [Diferencias clave con JavaScript](#diferencias-clave-con-javascript)
 
 - [Instalacion de TypeScript](#instalacion-de-typescript)
   - [Como instalar TypeScript globalmente usando npm](#como-instalar-typescript-globalmente-usando-npm)
- 
+
 - [Configuración del Proyecto](#configuracion-del-proyecto)
-  - [Archivo de configuracion **tsconfig.json**](#archivo-de-configuracion-tsconfigjson)
-  - [Configuracion de opciones esenciales](#configuracion-de-opciones-esenciales)
 
 - [Variables y tipos de datos](#variables-y-tipos-de-datos)
   - [Declaración de variables con let y const](#declaración-de-variables-con-let-y-const)
   - [Tipos basicos: **number**, **string**, **boolean**, **array**](#tipos-basicos-number-string-boolean-array)
- 
+
 - [Funciones](#funciones)
   - [Tipado de parametros y retorno de funciones](#tipado-de-parametros-y-retorno-de-funciones)
   - [Declaracion y llamada de funciones](#declaracion-y-llamada-de-funciones)
@@ -37,29 +33,30 @@ Descubre el poder de TypeScript en el desarrollo web.
 - [Tipos](#tipos)
 
 - [Diferencia entre tipos e interfaces](#diferencia-entre-tipos-e-interfaces)
- 
+
 - [Buenas practicas](#buenas-practicas)
 
 - [Siguientes pasos](#siguientes-pasos)
 
 - [Conclusion](#conclusion)
 
- ## Introduccion a TypeScript
+## Definicion y proposito de TypeScript
 
-### Definicion y proposito de TypeScript
-
-TypeScript, desarrollado por Microsoft,
-potencia el desarrollo de software al agregar
-un sistema de tipado estático opcional a JavaScript.
-Este sistema, que puedes ver como JavaScript con
-"superpoderes", permite trabajar con tipos de datos
-de manera más explícita, detectando errores en etapas
-tempranas y mejorando la calidad del código.
-Manteniendo compatibilidad total con JavaScript,
-TypeScript brinda claridad estructural, previene
-errores y se destaca como herramienta esencial
-para proyectos web, equilibrando flexibilidad y
-confiabilidad en el desarrollo de software.
+TypeScript, desarrollado por Microsoft, mejora el
+desarrollo de software al añadir un sistema de tipado
+estático opcional a JavaScript. Este sistema, denominado
+"JavaScript con superpoderes", permite trabajar de
+manera más explícita con tipos de datos, detectando errores
+en etapas tempranas y mejorando la calidad del código.
+Manteniendo total compatibilidad con JavaScript,
+TypeScript aporta claridad estructural, previene errores y
+se destaca como una herramienta esencial para proyectos web,
+equilibrando flexibilidad y confiabilidad. El tipado de datos,
+esencial para prevenir errores, implica asignar tipos específicos
+a variables o parámetros, asegurando coherencia en las operaciones.
+En un panorama de lenguajes de programación, TypeScript destaca por
+su capacidad para fortalecer la robustez del código desde las
+primeras etapas del desarrollo.
 
 > [!NOTE]
 > En matemáticas, un superset es un conjunto que
@@ -68,23 +65,6 @@ confiabilidad en el desarrollo de software.
 > JavaScript_**. Esto significa que todo lo que puedes
 > hacer en JavaScript, también puedes hacerlo en
 > TypeScript.
-
-### Tipado de datos
-
-El tipado de datos se refiere a la práctica de
-asignar un tipo específico a una variable,
-parámetro o cualquier entidad en un programa
-informático. Los tipos de datos indican el
-tipo de valor que puede almacenarse en una
-variable, como números, cadenas de texto,
-booleanos, entre otros. Los lenguajes de
-programación pueden ser de tipado estático,
-donde los tipos se definen en tiempo de
-compilación, o de tipado dinámico, donde los
-tipos se asignan en tiempo de ejecución. El
-tipado de datos ayuda a prevenir errores al
-asegurar que las operaciones en las variables
-sean coherentes con los tipos de datos asignados.
 
 ### Diferencias clave con JavaScript
 
@@ -108,19 +88,20 @@ a objetos.
 4. **_Compilación a JavaScript_**: Requiere compilación a JavaScript
 mediante el compilador de TypeScript (tsc) antes de la ejecución.
 
-6. **_Adición de tipos de datos_**: Introduce nuevos
+5. **_Adición de tipos de datos_**: Introduce nuevos
 tipos de datos, como enumeraciones y tipos condicionales.
 
-7. **_Desarrollo más seguro_**: Proporciona un desarrollo
+6. **_Desarrollo más seguro_**: Proporciona un desarrollo
 más seguro con tipado estático y características que mejoran
 la calidad del código.
 
-8. **_Extensión de Archivos_**: Una diferencia importante es la extensión de los archivos.
+7. **_Extensión de Archivos_**: Una diferencia importante es la extensión de los archivos.
    - **JavaScript**: Los archivos JavaScript típicamente tienen la extensión .js.
    - **TypeScript**: Los archivos TypeScript utilizan la extensión .ts.
-9. **_Detección temprana de errores_**: Una diferencia importante que puedes detectar errores en tiempo de desarrollo (es decir cuando estas programando), permitiendo codificar más rápido.
+8. **_Detección temprana de errores_**: Una diferencia importante que puedes detectar errores en tiempo de desarrollo (es decir cuando estas programando), permitiendo codificar más rápido.
     - **JavaScript**: Detectas los errores cuando ejecutas la aplicación.
-    -  **TypeScript**: Detectas cuando estas programando.
+    - **TypeScript**: Detectas cuando estas programando.
+
 ## Instalacion de TypeScript
 
 ### Como instalar TypeScript globalmente usando npm
@@ -158,11 +139,21 @@ Como resultado se debió haber creado un nuevo archivo llamado **Hello.js** y el
 no igual) al archivo  **Hello.ts** la diferencia es que el archivo **Hello.js** lo puedes usar para ser ejecutado.
 
 ## Configuracion del proyecto
-<!-- En contruccion 🚧👷‍♀️ -->
 
-### Archivo de configuracion **tsconfig.json**
+El archivo `tsconfig.json` se utiliza para
+especificar la configuración del
+[compilador](https://es.wikipedia.org/wiki/Compilador)
+TypeScript (TSC). Algunas de las configuraciones
+comunes en este archivo incluyen la versión de
+[ECMAScript](https://developer.mozilla.org/es/docs/Glossary/ECMAScript)
+de destino, la ubicación de los archivos fuente y de salida,
+opciones de compilación, y otras configuraciones relacionadas con el proyecto TypeScript.
 
-### Configuracion de opciones esenciales
+> [!TIP]
+> [Ejemplo básico de un archivo](https://www.youtube.com/watch?v=DL2IBLWwfaU)
+>
+> [Documentación oficial](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+>
 
 ## Variables y tipos de datos
 
@@ -644,7 +635,7 @@ Estas son solo algunas prácticas recomendadas, pero ten en
 cuenta que las buenas prácticas pueden variar según el
 contexto y los requisitos específicos del proyecto.
 
-## Siguientes pasos 
+## Siguientes pasos
 
 Visita los siguientes enlaces:
 
@@ -655,6 +646,8 @@ Visita los siguientes enlaces:
 - [React con TS](https://es.react.dev/learn/typescript)
 - [Learn TypeScript](https://www.tutorialsteacher.com/typescript)
 - [Getting Started a vite project (you can use typescript)](https://vitejs.dev/guide/)
+- [Codecademy Learn TypeScript](https://www.codecademy.com/learn/learn-typescript)
+
 ## Conclusion
 
 TypeScript ha evolucionado mucho, hoy en dia es muy popular y su capacidad para añadir tipos estáticos a JavaScript no
@@ -662,4 +655,3 @@ solo brinda una capa adicional de seguridad y detección de errores, sino que ta
 escalabilidad de los proyectos. Al aprender TypeScript, te sumerges en un ecosistema que fomenta la creación de código
 más limpio, legible y mantenible, si tienes alguna duda no olvides: usar ExplainDev, usar los canales de los proyecto,
 preguntarle a tus coaches, asistir a git-camp y test-camp, esperamos que esta Introducción a TypeScript te sea de utilidad.
-
